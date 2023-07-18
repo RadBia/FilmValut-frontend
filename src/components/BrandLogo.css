@@ -1,0 +1,16 @@
+.brand_container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+   
+}
+.icon i{
+color: #ef5000;
+    font-size: 25px;
+}
+
+
+.brand-letter{
+    color: #ef5000;
+    font-size: 45px; 
+}
