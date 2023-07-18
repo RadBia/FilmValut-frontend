@@ -1,46 +1,64 @@
-# Getting Started with Create React App
+# FilmVault-Spring
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FilmVault-Spring is a web application that allows users to store and manage a collection of movies. The project utilizes Spring Boot technology and MySQL database.
 
-## Available Scripts
+## System Requirements
 
-In the project directory, you can run:
+Before getting started with the project, make sure your system meets the following requirements:
 
-### `npm start`
+- Java 8 or higher
+- Maven 3.6.3 or higher
+- MySQL 5.7 or higher
+- Your favorite IDE (IntelliJ, Eclipse, etc.)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation Instructions
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone the repository to your local environment:
+git clone https://github.com/k2esone/filmvault-spring.git
 
-### `npm test`
+2. Open the project in your preferred IDE.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Configure the MySQL database connection by editing the `application.properties` file located in the `src/main/resources` folder. Modify the values of the properties `spring.datasource.url`, `spring.datasource.username`, and `spring.datasource.password` to reflect your local database settings.
 
-### `npm run build`
+4. Run the following command to install the required Maven dependencies:
+mvn install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Start the application by running the command:
+mvn spring-boot:run
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. The application should be accessible at [http://localhost:8080](http://localhost:8080).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## API Documentation
 
-### `npm run eject`
+FilmVault-Spring application provides an API for movie management. The full API documentation can be found at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html) after running the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contributing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you would like to contribute to the development of FilmVault-Spring project, you can follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Clone the repository to your computer:
+git clone https://github.com/k2esone/filmvault-spring.git
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. Create a new branch for your changes:
+git checkout -b your_branch_name
 
-## Learn More
+3. Make your changes and commit them:
+git commit -m "Description of your changes"
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Push your changes to the remote repository:
+git push origin your_branch_name
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Open a pull request (PR) on GitHub to submit your changes to the project's main branch.
+
+## Authors
+
+- k2esone, 
+- dwydm, 
+- RadBia,
+- MWolok,
+- Mateuszcell
+
+
+## License
+
+This project is licensed under the [license_name] license. For more information, see the [LICENSE](https://github.com/k2esone/filmvault-spring/blob/master/LICENSE) file.
