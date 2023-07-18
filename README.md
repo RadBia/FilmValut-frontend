@@ -1,64 +1,71 @@
-# FilmVault-Spring
+# FilmVault-React
 
-FilmVault-Spring is a web application that allows users to store and manage a collection of movies. The project utilizes Spring Boot technology and MySQL database.
+FilmVault-React is a web application built with React that allows users to browse and discover movies. The project utilizes modern web technologies such as React, Redux, and the Movie Database (TMDb) API.
+
+## Features
+
+- Browse popular movies
+- Search for movies by title
+- View movie details including overview, release date, and average rating
+- Save favorite movies to a watchlist
 
 ## System Requirements
 
 Before getting started with the project, make sure your system meets the following requirements:
 
-- Java 8 or higher
-- Maven 3.6.3 or higher
-- MySQL 5.7 or higher
-- Your favorite IDE (IntelliJ, Eclipse, etc.)
+- Node.js 
+- npm 
 
-## Installation Instructions
+## Installation
 
 1. Clone the repository to your local environment:
-git clone https://github.com/k2esone/filmvault-spring.git
+git clone https://github.com/k2esone/filmvault-react.git
 
-2. Open the project in your preferred IDE.
+2. Navigate to the project directory:
+cd filmvault-react
 
-3. Configure the MySQL database connection by editing the `application.properties` file located in the `src/main/resources` folder. Modify the values of the properties `spring.datasource.url`, `spring.datasource.username`, and `spring.datasource.password` to reflect your local database settings.
+3. Install the dependencies:
+npm install
 
-4. Run the following command to install the required Maven dependencies:
-mvn install
+4. Configure the API key:
+- Create an account on [TMDb](https://www.themoviedb.org/) and generate an API key.
+- Copy the `.env.example` file and rename it to `.env`.
+- Replace the value of `REACT_APP_API_KEY` in the `.env` file with your API key.
 
-5. Start the application by running the command:
-mvn spring-boot:run
+5. Start the development server:
+npm start
 
-6. The application should be accessible at [http://localhost:8080](http://localhost:8080).
+6. The application should now be running on [http://localhost:3000](http://localhost:3000).
 
-## API Documentation
+## Deployment
 
-FilmVault-Spring application provides an API for movie management. The full API documentation can be found at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html) after running the application.
+To deploy the application to a production environment, follow these steps:
+
+1. Build the optimized bundle:
+npm run build
+
+2. Deploy the contents of the `build` directory to your hosting platform.
 
 ## Contributing
 
-If you would like to contribute to the development of FilmVault-Spring project, you can follow these steps:
+If you would like to contribute to the development of FilmVault-React project, you can follow these steps:
 
-1. Clone the repository to your computer:
-git clone https://github.com/k2esone/filmvault-spring.git
+1. Fork the repository and create a new branch for your changes.
 
-2. Create a new branch for your changes:
-git checkout -b your_branch_name
+2. Make your changes and commit them.
 
-3. Make your changes and commit them:
-git commit -m "Description of your changes"
+3. Push your changes to your forked repository.
 
-4. Push your changes to the remote repository:
-git push origin your_branch_name
-
-5. Open a pull request (PR) on GitHub to submit your changes to the project's main branch.
+4. Open a pull request (PR) on GitHub to submit your changes to the project's main branch.
 
 ## Authors
 
-- k2esone, 
-- dwydm, 
-- RadBia,
-- MWolok,
+- MWolok
 - Mateuszcell
-
+- k2esone
+- dwydm
+- RadBia
 
 ## License
 
-This project is licensed under the [license_name] license. For more information, see the [LICENSE](https://github.com/k2esone/filmvault-spring/blob/master/LICENSE) file.
+This project is licensed under the [license_name] license. For more information, see the [LICENSE](https://github.com/k2esone/filmvault-react/blob/master/LICENSE) file.
